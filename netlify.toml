@@ -1,2 +1,9 @@
+
+[build]
+  # this tells Netlify how to build your site
+  command = "npm run deploy:netlify" 
+  publish = "docs"ish = "docs"
+
 [build.environment]
+  # skip submodule checkout so your repo layout matches
   GIT_SUBMODULE_STRATEGY = "none"
